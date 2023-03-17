@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--Edit text to enter Participant name-->
+    <EditText
+        android:id="@+id/idParticipantName"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:hint="Enter Participant Name" />
+
+
+    <!--button for adding new Participant-->
+    <Button
+        android:id="@+id/idBtnAddParticipant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Save"
+        android:textAllCaps="false" />
+
+    <!--new button for opening participant list activity-->
+    <Button
+        android:id="@+id/idBtnReadParticipant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="View All Participant"
+        android:textAllCaps="false" />
+
+
+</LinearLayout>
