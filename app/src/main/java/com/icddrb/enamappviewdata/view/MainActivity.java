@@ -1,4 +1,4 @@
-package com.icddrb.enamappviewdata;
+package com.icddrb.enamappviewdata.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.icddrb.enamappviewdata.DBHandler;
+import com.icddrb.enamappviewdata.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -55,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 // after adding the data we are displaying a toast message.
                 Toast.makeText(MainActivity.this, "Participant has been added.", Toast.LENGTH_SHORT).show();
                 participantNameEdit.setText("");
+                startActivity(new Intent(MainActivity.this,ViewParticipantActivity.class));
 
             }
         });
@@ -63,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // opening a new activity via a intent.
-                Intent i = new Intent(MainActivity.this, ViewParticipant.class);
+                Intent i = new Intent(MainActivity.this, ViewParticipantActivity.class);
                 startActivity(i);
             }
         });

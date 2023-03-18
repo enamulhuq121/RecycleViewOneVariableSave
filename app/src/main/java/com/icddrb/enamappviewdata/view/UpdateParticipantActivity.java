@@ -1,4 +1,4 @@
-package com.icddrb.enamappviewdata;
+package com.icddrb.enamappviewdata.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.icddrb.enamappviewdata.DBHandler;
+import com.icddrb.enamappviewdata.R;
 
 public class UpdateParticipantActivity extends AppCompatActivity {
 
